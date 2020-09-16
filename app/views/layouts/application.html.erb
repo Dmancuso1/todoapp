@@ -10,6 +10,14 @@
   </head>
 
   <body>
+    <h2><<<< Nav Area >>>>></h2>
+
+    <% flash.each do |name, msg| %>
+      <ul>
+        <li><%= msg %></li>
+      </ul>
+    <% end%>
+
     <%= yield %>
   </body>
 </html>
